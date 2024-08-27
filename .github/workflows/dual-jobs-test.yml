@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 18.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
     - name: Set up Node.js
@@ -34,4 +34,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Print Message from Job 2
-      run: echo" job 2 tested"
+      run: echo " 'job 2 tested'"
