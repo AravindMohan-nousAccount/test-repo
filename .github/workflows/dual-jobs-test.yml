@@ -5,7 +5,7 @@ on:
     branches:
       - main
 env:
-  Today: Monday
+  Today: wednesday
 jobs:
   job-1:
     runs-on: ubuntu-latest
