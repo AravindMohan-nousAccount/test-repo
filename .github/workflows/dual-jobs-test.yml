@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+env:
+  Today: Monday
 jobs:
   job-1:
     runs-on: ubuntu-latest
@@ -19,7 +20,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Print Message from Job 1
-      run: echo " 'job 1 tested',${{matrix.node-version}}"
+      run: echo " 'job 1 tested',${{matrix.node-version}},'today is ',$Today"
 
   job-2:
     runs-on: ubuntu-latest
