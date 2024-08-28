@@ -34,4 +34,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Print Message from Job 2
-      run: echo " 'job 2 tested'"
+      run: echo " 'job 2 tested',${{matrix.node-version}}"
